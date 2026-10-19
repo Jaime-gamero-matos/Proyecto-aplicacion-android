@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cj_splashart"
+    tools:context=".gta_menu">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="357dp"
+        android:layout_height="268dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="435dp"
+        android:background="#CC0D0D0D"
+        android:backgroundTint="#CC0D0D0D"
+        app:cardBackgroundColor="#CC0D0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+        <TextView
+            android:id="@+id/historia"
+            android:layout_width="357dp"
+            android:layout_height="match_parent"
+            android:text="La historia de Grand Theft Auto: San Andreas transcurre en el año 1992 en el estado ficticio de San Andreas (basado en California y Nevada). El protagonista es Carl «CJ» Johnson, un joven afroamericano que regresa a su ciudad natal, Los Santos, tras pasar cinco años viviendo en Liberty City. Vuelve a casa después de enterarse del asesinato de su madre, Beverly Johnson, en un tiroteo"
+            android:textAlignment="center"
+            android:textColor="#BBFFFFFF"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

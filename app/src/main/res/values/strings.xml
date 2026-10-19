@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Remembering PS2</string>
+    <string name="bot_n_de_budokai_tenkaichi_3">Botón de Budokai Tenkaichi 3</string>
+    <string name="primera_fila">primera fila del menu</string>
+    <string name="bot_n_de_tekken">Botón de Tekken</string>
+    <string name="tarjetaBotonTekken">tarjeta botton tekken\n</string>
+</resources>

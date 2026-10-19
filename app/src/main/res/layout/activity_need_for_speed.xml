@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vistaNfs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nfs_fondo"
+    tools:context=".needForSpeedActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSeleccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        app:cardBackgroundColor="#CC0D0D0D"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintWidth_percent="0.85">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:letterSpacing="0.08"
+                android:text="SELECCIONA UN COCHE"
+                android:textColor="#FF2A2A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FF2A2A" />
+
+            <RadioGroup
+                android:id="@+id/rgCoches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbBmw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="#FF2A2A"
+                    android:gravity="center"
+                    android:text="BMW M3 GTR"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbLancer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="#FF2A2A"
+                    android:gravity="center"
+                    android:text="Mitsubishi Lancer Evo IX"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbViper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2A2A"
+                    android:gravity="center"
+                    android:text="Dodge Viper SRT-10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/cbOcultarMenu"
+        android:layout_width="207dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="16dp"
+        android:background="#CC0D0D0D"
+        android:buttonTint="#FF2A2A"
+        android:checked="false"
+        android:text="Ocultar opciones de menú"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardSeleccion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

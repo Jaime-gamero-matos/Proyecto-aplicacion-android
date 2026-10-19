@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla2"
+    tools:context=".menuActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="669dp" />
+
+    <ImageView
+        android:id="@+id/btnBudokai"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Botón de Budokai Tenkaichi 3"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/budokai_tenkaichi_3_logo"
+        app:layout_constraintBottom_toTopOf="@id/btnSanAndreas"
+        app:layout_constraintEnd_toStartOf="@id/btnSimpson"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
+
+    <ImageView
+        android:id="@+id/btnSimpson"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Botón de Los Simpson Hit and Run"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/los_simpson_logo"
+        app:layout_constraintBottom_toTopOf="@id/btnTekken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnBudokai"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
+
+    <ImageView
+        android:id="@+id/btnSanAndreas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Botón de San Andreas"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_san_andreas"
+        app:layout_constraintBottom_toTopOf="@id/btnFifaStreet"
+        app:layout_constraintEnd_toStartOf="@id/btnTekken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBudokai" />
+
+    <ImageView
+        android:id="@+id/btnTekken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Botón de Tekken"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_tekken"
+        app:layout_constraintBottom_toTopOf="@id/btnNeedForSpeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnSanAndreas"
+        app:layout_constraintTop_toBottomOf="@id/btnSimpson" />
+
+    <ImageView
+        android:id="@+id/btnFifaStreet"
+        android:layout_width="162dp"
+        android:layout_height="200dp"
+        android:layout_margin="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Botón de FIFA Street"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fifa_street_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnNeedForSpeed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSanAndreas" />
+
+    <ImageView
+        android:id="@+id/btnNeedForSpeed"
+        android:layout_width="195dp"
+        android:layout_height="208dp"
+        android:layout_margin="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Botón de Need for Speed Carbon"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/need_for_speed_carbon_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnFifaStreet"
+        app:layout_constraintTop_toBottomOf="@id/btnTekken" />
+
+    <ImageView
+        android:id="@+id/bannerps2"
+        android:layout_width="374dp"
+        android:layout_height="341dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="680dp"
+        android:cropToPadding="false"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649"
+        app:srcCompat="@drawable/banner_ps2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
